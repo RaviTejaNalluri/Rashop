@@ -1,9 +1,10 @@
 package com.rashop.product_service.dto;
+
+import com.rashop.product_service.domain.ProductStatus;
 import java.time.OffsetDateTime;
 import java.util.UUID;
-import com.rashop.product_service.domain.ProductStatus;
 
-public class ProductUpdateResponse {
+public class ProductResponse {
     private UUID id;
     private String slug;
     private String name;
@@ -33,3 +34,5 @@ public class ProductUpdateResponse {
     public OffsetDateTime getUpdatedAt() { return updatedAt; }
     public void setUpdatedAt(OffsetDateTime updatedAt) { this.updatedAt = updatedAt; }
 }
+
+
